@@ -1,6 +1,6 @@
 # Jira OAuth Authenticaton for nodejs
 
-Since the official samples from Atlassian are outdated and I had trouble finding any othr good samples for server integration scenarios. There are two scripts, oauth-authenticate.js that takes you through the oAuth dance and displays the token and token secret and testoauth.js that allow you to test your tokens, and serves as an example on how you can use the oAuth tokens with the request module. 
+Since the official samples from Atlassian are outdated and I had trouble finding any good samples for server integration scenarios, I made my own. The client code is more or less copied from https://gist.github.com/tanepiper/575303, but edited to match Jira. There are two scripts, oauth-authenticate.js that takes you through the oAuth dance and displays the token and token secret and testoauth.js that allow you to test your tokens, and serves as an example on how you can use the oAuth tokens with the request module. 
 
 ## Setup
 The first step is taken from the atlassian documentation.
@@ -14,7 +14,7 @@ If you have not done so already, run "npm install" to install any dependencies. 
 ```sh
 node oauth-authenticate.js --jira https://my-test.atlassian.net --key servicemiddleware --keyfile ./jira_privatekey.pem --issue JRA-18
 Visit:
-https://syscom-test.atlassian.net/plugins/servlet/oauth/authorize?oauth_token=gZCvtIs0JcgaGQLemgVJDOoNmaCixR5N
+https://my-test.atlassian.net/plugins/servlet/oauth/authorize?oauth_token=gZCvtIs0JcgaGQLemgVJDOoNmaCixR5N
 After logged in, you will be redirected to a page on localhost, copy the oauth_verifier code parameter and paste it below
 Enter the verification code here:
 
