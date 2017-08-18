@@ -1,0 +1,19 @@
+{
+  "name": "jira-outh-dance",
+  "version": "0.9.0",
+  "description": "Small script for obtaining Jira Oauth token",
+  "main": "dance.js",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "oauth": "^0.9.15",
+    "optimist": "^0.6.1",
+    "request": "^2.81.0",
+    "step": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Vollset<mvollset@gmail.com>",
+  "license": "Apache-2.0"
+}
